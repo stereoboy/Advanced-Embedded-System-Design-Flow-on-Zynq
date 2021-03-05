@@ -10,6 +10,9 @@ After completing this lab, you will be able to:
 * Perform hardware debugging using the hardware analyzer
 * Perform software debugging using the SDK
 
+### Stereoboy's Comments
+* Cross Trigger is... : if HW(Vivado) get triggerred -> SW(XSDK) triggered and if SW(XSDK) get triggered -> HW(Vivado) triggered. Break from one side causes break from the other side Bidirectionally
+  * Use ILA (Integrated Logic Analyzer, not System ILA) with connection with Zynq PS.  
 ## Steps
 
 ## Open the Project
@@ -229,7 +232,7 @@ We want to connect the ILA core to the LED interface.  Vivado prohibits connecti
 ### Setup trigger conditions to trigger on a write transaction (WSTRB) when the desired data (WDATA) of XXXX\_XX12 is written. The transaction takes place when WVALID and WREADY are equal to 1.
 1. Click on the _hw\_ila\_2_ tab to select it. In the **Debug Probes** window, under _hw\_ila\_2_, drag and drop the **WDATA** signal to the _ILA Basic Trigger setup_ window **.**
 1. Set the value to **XXXX\_XX12** (HEX) (the value written to the math\_0 instance at line 24 of the program).
-1. Similarly, add **WREADY,**** WSTRB, **and** WVALID** signals to the _ILA Basic Trigger setup_ window.
+1. Similarly, add **WREADY,** **WSTRB** and **WVALID** signals to the _ILA Basic Trigger setup_ window.
 1. Change the radix to binary for _WSTRB_, and change the value from **xxxx** to **xxx1**
 1. Change the value of **WVALID** and **WREADY** to 1.
 1. Set the trigger position of the _hw\_ila\_2_ to **512** in the _Settings – hw\_ila\_2_
