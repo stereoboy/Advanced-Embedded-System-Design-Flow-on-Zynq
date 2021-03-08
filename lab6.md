@@ -9,6 +9,10 @@ After completing this lab, you will be able to:
 * Setup the profiling parameters
 * Profile an application and analyze the output
 
+### Stereoboy's Comments
+* Show How to use gprof by comparing PL HW implementation and PS SW implementation. (HW implementation is about twice faster than SW)
+* Tune Sampling Frequency
+
 ## Steps
 ## Create a Vivado Project
 ### Launch Vivado and create an empty project, called lab6, targeting the PYNQ-Z1 or PYNQ-Z2 boards and using the Verilog language.
