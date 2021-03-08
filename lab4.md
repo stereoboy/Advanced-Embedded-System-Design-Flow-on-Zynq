@@ -8,6 +8,9 @@ After completing this lab, you will be able to:
 * Add and connect the CDMA controller in the programmable logic
 * Perform DMA operation between various memories
 
+### Stereoboy's Comments
+* Check out performance enhancement of using additional HW, CDMA instead of Zynq7.
+
 ## Steps
 ## Open the Project        
 ### Open the Vivado program. Open the _lab3_ project you created earlier or use the _lab3_ project from the labsolutions directory, and save the project as _lab4_.
