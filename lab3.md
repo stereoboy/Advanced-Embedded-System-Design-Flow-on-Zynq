@@ -7,6 +7,9 @@ After completing this lab, you will be able to:
 * Add BRAM and connect it to the processing system&#39;s AXI master port
 * Execute the software application having data section in the BRAM
 
+### Stereoboy's Comments
+* DDR Base Clock 533 MHz, BRAM's Clock is 140 MHz in this lab. If setup for memory for Heap & Stack Segments changes DDR(**ps7\_ddr\_0**) -> BRAM(**axi\_bram\_ctrl\_0\_Mem0.**).
+
 ## Steps
 ## Open the Project        
 ### Open the Vivado program. Open the _lab1_ project you created earlier or use the _lab1_ project from the labsolution directory, and save the project as _lab3_.
