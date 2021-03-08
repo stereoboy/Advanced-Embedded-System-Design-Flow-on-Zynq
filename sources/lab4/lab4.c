@@ -181,7 +181,7 @@ int main (void) {
 
 	// Initialize UART
 	// Look up the configuration in the config table, then initialize it.
-	Config = XUartPs_LookupConfig(XPAR_PS7_UART_0_DEVICE_ID);
+	Config = XUartPs_LookupConfig(XPAR_PS7_UART_1_DEVICE_ID);
 	if (NULL == Config) {
 		return XST_FAILURE;
 	}
